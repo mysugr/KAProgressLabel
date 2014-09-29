@@ -53,10 +53,10 @@
 
 -(void)drawRect:(CGRect)rect {
     if (_progressType == ProgressLabelCircle) {
-        [self drawProgressLabelCircleInRect:rect];
+        [self drawProgressLabelCircleInRect:self.bounds];
     }
     else {
-        [self drawProgressLabelRectInRect:rect];
+        [self drawProgressLabelRectInRect:self.bounds];
     }
     [super drawTextInRect:rect];
 }
